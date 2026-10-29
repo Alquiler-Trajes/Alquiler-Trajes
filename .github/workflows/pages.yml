@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  pages: read
 concurrency:
   group: github-pages
   cancel-in-progress: true
@@ -23,7 +24,7 @@ jobs:
           test -f _site/data/catalog.json
           test -f _site/trajes/real-folclor-aguamarina/index.html
           touch _site/.nojekyll
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
