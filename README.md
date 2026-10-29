@@ -2,19 +2,15 @@
 
 Página: https://alquiler-trajes.github.io/Alquiler-Trajes/
 Instagram: https://www.instagram.com/alquileresbga/
-Chat: https://ig.me/m/alquileresbga
 
-Actualización del 29 de octubre de 2026: inicio con tres accesos circulares, al estilo de historias destacadas, para Danzas y cultura (15 trajes), Disfraces (19 trajes) y Accesorios (14 ofertas). Las fotografías abren sus colecciones. Se conservan la clasificación, los modelos y los juegos culturales x1 o x6.
+El inicio conserva las tres tarjetas con carruseles: Danzas y cultura, Disfraces y Accesorios. Las fotos se pueden recorrer y pausar. Se eliminaron eslóganes e instrucciones repetidas del inicio, catálogo, pie de página y selección.
 
-«Escríbenos» abre el chat de @alquileresbga. En «Mi selección», «Copiar y abrir Instagram» copia el resumen con modelos, cantidades, colores y tallas; la persona lo pega y lo envía desde Instagram. También puede ver, copiar o descargar el resumen y abrir el perfil como alternativa. El sitio no envía mensajes automáticamente ni confirma reservas. WhatsApp no se ofrece en la selección pública actual.
+«Escríbenos» abre el chat de @alquileresbga. En «Mi selección», «Copiar y abrir Instagram» copia modelos, tallas, colores y cantidades para pegarlos en el chat. Se mantienen las opciones de copiar, descargar y ver el resumen. El sitio no envía mensajes automáticamente ni confirma reservas. WhatsApp no se ofrece en la selección pública actual.
 
-Validado con tipos, compilación estática y revisión en navegador: navegación de colecciones, juego de seis, copia de selección, apertura del chat correcto y tamaños de 390 y 320 px. Se actualizaron las comprobaciones de navegador del repositorio para los nuevos accesos y el contacto. El inventario y el Excel no se modificaron.
+Se conservan los 34 trajes, 14 ofertas de accesorios, las imágenes revisadas, la clasificación y los juegos culturales x1/x6. Inventario y Excel sin cambios.
 
-La entrega conserva los 34 trajes, 14 ofertas de accesorios y 63 imágenes revisadas. Las presentaciones editadas con IA siguen identificadas. Las tarifas, medidas y cantidades pendientes se confirman con el negocio.
+Validación: tipos, compilación estática, revisión en navegador de las colecciones, juego de seis, copia del resumen y apertura del chat correcto. Se conserva la cobertura de los carruseles y se añadió una comprobación de consulta por Instagram.
 
-Archivos de esta entrega:
-- github-pages-listo.zip: catálogo compilado y revisado.
-- github-pages.sha256: checksum que verifica el flujo antes de publicar.
-- vestuario-fuente.zip: fuente local 44a31b3, sin credenciales, originales, datos privados ni copias de respaldo.
+Entrega: github-pages-listo.zip (sitio compilado), github-pages.sha256 (checksum de despliegue) y vestuario-fuente.zip (código fuente actual). Los archivos privados, credenciales y originales quedan excluidos.
 
-Para actualizar, extraer el código y seguir su README. Ejecutar pnpm pages:build, revisar el resultado, empaquetar el contenido de apps/web/out y reemplazar juntos el paquete y su checksum. La administración completa requiere la API y PostgreSQL; GitHub Pages publica el catálogo estático.
+Para actualizar, seguir el README del código fuente, compilar con pnpm pages:build, revisar y reemplazar juntos el paquete y su checksum. GitHub Pages publica el catálogo estático; la administración completa requiere la API y PostgreSQL.
