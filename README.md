@@ -2,7 +2,9 @@
 
 Página: https://alquiler-trajes.github.io/Alquiler-Trajes/
 
-El catálogo ofrece 34 trajes y 14 accesorios o kits. El inicio conserva Danzas y princesas, Profesiones y disfraces, y un acceso sencillo a Accesorios.
+El catálogo ofrece 34 trajes y 14 accesorios o kits. El inicio muestra tres tarjetas con carruseles: Danzas y cultura (23 trajes), Profesiones y disfraces (11 trajes), y Accesorios (14 ofertas). Michael Jackson completo, Caballero años 20 completo y Oficial de época se encuentran en «Época y escenario», dentro de Danzas y cultura. Sus accesorios conservan su apartado propio.
+
+Cada carrusel muestra fotos destacadas y permite avanzar, retroceder o pausar el movimiento. El movimiento reducido y el uso del teclado detienen el cambio automático. Los títulos se muestran encima de las fotos y Accesorios tiene un acceso destacado en el menú, también en móvil.
 
 Piloto se ofrece únicamente como traje completo en Profesiones, con una nueva imagen de camisa blanca, pantalón negro, gorra, corbata, charreteras e insignia colocados en el uniforme. La tercera entrega agrega conjuntos completos de marinero, caballero años 20, baile, pirata y vampiro, además de nuevas opciones de accesorios. Los colores comparten ficha y pueden actualizar la fotografía. Se conservan separados los juegos con distinto contenido.
 
@@ -16,7 +18,7 @@ Esta entrega contiene:
 - github-pages.sha256: comprobación del paquete antes de publicar.
 - vestuario-fuente.zip: código fuente, dependencias, migraciones, scripts y pruebas.
 
-Se verificaron tipos, compilación estática, doce pruebas de navegador en escritorio/móvil, la importación idempotente y las referencias de stock compartido. El Excel se actualizó de forma privada, conservando sus cuatro hojas y campos numéricos anteriores. El Excel no se incluye en la página ni se sincroniza automáticamente con la web.
+Esta actualización pasó tipos, compilación estática, 24 pruebas unitarias, 26 de integración y 14 de navegador en escritorio/móvil; también se revisó visualmente en móvil y escritorio. La entrega anterior verificó la importación idempotente, las referencias de stock compartido y el Excel privado con cuatro hojas. El Excel no se incluye en la página ni se sincroniza automáticamente con la web.
 
 La selección pública no confirma reservas. La aplicación completa de inventario y reservas requiere Node.js y PostgreSQL; GitHub Pages aloja el catálogo estático.
 
