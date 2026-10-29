@@ -2,7 +2,7 @@
 
 Página: https://alquiler-trajes.github.io/Alquiler-Trajes/
 
-El catálogo ofrece 34 trajes y 14 accesorios o kits. El inicio muestra tres tarjetas con carruseles: Danzas y cultura (23 trajes), Profesiones y disfraces (11 trajes), y Accesorios (14 ofertas). Michael Jackson completo, Caballero años 20 completo y Oficial de época se encuentran en «Época y escenario», dentro de Danzas y cultura. Sus accesorios conservan su apartado propio.
+El catálogo ofrece 34 trajes y 14 accesorios o kits. El inicio muestra tres tarjetas con carruseles: Danzas y cultura (15 trajes), Disfraces (19 trajes), y Accesorios (14 ofertas). Princesas, profesiones y piratas se encuentran en Disfraces y sus fotos se muestran en el carrusel central. Michael Jackson completo, Caballero años 20 completo y Oficial de época se encuentran en «Época y escenario», dentro de Danzas y cultura. Sus accesorios conservan su apartado propio.
 
 Cada carrusel muestra fotos destacadas y permite avanzar, retroceder o pausar el movimiento. El movimiento reducido y el uso del teclado detienen el cambio automático. Los títulos se muestran encima de las fotos y Accesorios tiene un acceso destacado en el menú, también en móvil.
 
