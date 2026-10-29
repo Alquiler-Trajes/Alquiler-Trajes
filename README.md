@@ -1,21 +1,21 @@
-# Vestuario · Alquiler de trajes
+# Vestuario · Alquiler de trajes y accesorios
 
-Catálogo público de trajes culturales y disfraces: 28 modelos, fotografías de estudio y doce vistas de juegos x6.
+Página: https://alquiler-trajes.github.io/Alquiler-Trajes/
 
-El inicio ofrece dos colecciones: **Danzas y princesas** (20 modelos) y **Profesiones y disfraces** (8). Los trajes se muestran en parejas, en el orden culturales, princesas, profesiones y disfraces. Incluye marcos suaves, letra legible, animaciones discretas, filtros plegados y navegación **Inicio / Mis trajes**.
+El catálogo ofrece 29 trajes y 9 accesorios o kits. El inicio conserva Danzas y princesas, Profesiones y disfraces, y un acceso sencillo a Accesorios. Piloto se ofrece como traje completo y como kit de accesorios, con enlaces entre las dos opciones. Su foto actual muestra el kit y se indica que la foto del uniforme está pendiente.
 
-La página se publica en **https://alquiler-trajes.github.io/Alquiler-Trajes/** cuando termina correctamente el flujo de GitHub Pages.
+La selección permite reunir trajes y accesorios. Los doce modelos culturales conservan alquiler x1 o juego x6. Las 296 unidades registradas se conservan; las cantidades de accesorios y del uniforme de piloto, y las tarifas, están por confirmar. Tres fotos de accesorios se editaron para retirar personas y anuncios, con identificación de edición con IA.
 
-Este repositorio contiene la entrega verificada:
+Esta entrega contiene:
 
-- `github-pages-listo.zip`: página compilada, lista para GitHub Pages. El flujo de publicación extrae este paquete.
-- `github-pages.sha256`: suma de comprobación del paquete, verificada antes de publicar.
-- `vestuario-fuente.zip`: código fuente completo del proyecto, dependencias declaradas, migraciones, scripts y pruebas. Se excluyen credenciales, datos privados, originales con rostros y copias de seguridad.
+- github-pages-listo.zip: catálogo compilado para GitHub Pages.
+- github-pages.sha256: comprobación del paquete antes de publicar.
+- vestuario-fuente.zip: código fuente, dependencias declaradas, migraciones, scripts y pruebas.
 
-Se verificaron 70 pruebas y las compilaciones de la aplicación y del catálogo público. La página permite explorar fotos y tallas, elegir x1 o x6 con un solo selector, guardar «Mis trajes» y copiar o descargar el resumen. Se comprobaron teclado, movimiento reducido, escritorio, móvil y pantalla de 320 px. Los precios pendientes se indican como precio a consultar. La disponibilidad y la reserva se acuerdan con el negocio.
+Se verificaron 23 pruebas unitarias, 26 de integración, 10 de navegador en escritorio/móvil, tipos y compilación estática. También se auditó el stock compartido entre piloto completo y su kit.
+
+El Excel con fotos se entrega de forma privada y no se incluye en la página. La selección pública no confirma reservas. La aplicación completa de inventario y reservas requiere Node.js y PostgreSQL; GitHub Pages aloja el catálogo estático.
 
 ## Actualizar
 
-Extraer el código fuente en una carpeta local y seguir su README. Con el inventario local disponible, ejecutar `pnpm pages:snapshot`, `pnpm pages:build` y `pnpm pages:test`. Volver a empaquetar el contenido de `apps/web/out` y reemplazar juntos `github-pages-listo.zip` y su archivo `github-pages.sha256`. El siguiente commit verifica el paquete y vuelve a publicar.
-
-La aplicación completa de inventario y reservas requiere un servidor Node.js y PostgreSQL. GitHub Pages aloja el catálogo estático. El número de WhatsApp y las tarifas reales deben configurarse desde el negocio antes de ofrecer esas funciones.
+Extraer el código fuente y seguir su README. Ejecutar pnpm pages:snapshot, pnpm pages:build y pnpm pages:test. Empaquetar el contenido de apps/web/out y reemplazar juntos github-pages-listo.zip y github-pages.sha256. El siguiente commit comprueba el paquete y vuelve a publicar. Los datos privados, credenciales y originales con rostros se conservan fuera del repositorio público.
