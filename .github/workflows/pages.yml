@@ -1,0 +1,42 @@
+name: Publicar catálogo en GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verificar la entrega probada
+        run: echo '4c8a71a6e1b6bd99d518387679897947dc39b9335a55d4146f22712952296cff  github-pages-listo.zip' | sha256sum --check
+      - name: Extraer catálogo
+        run: unzip -q github-pages-listo.zip -d _site
+      - name: Comprobar contenido
+        run: |
+          test -f _site/index.html
+          test -f _site/data/catalog.json
+          test -f _site/trajes/real-folclor-aguamarina/index.html
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4
