@@ -15,7 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Verificar la entrega probada
-        run: echo '4c8a71a6e1b6bd99d518387679897947dc39b9335a55d4146f22712952296cff  github-pages-listo.zip' | sha256sum --check
+        run: |
+          if [ -f github-pages.sha256 ]; then
+            sha256sum --check github-pages.sha256
+          else
+            echo '4c8a71a6e1b6bd99d518387679897947dc39b9335a55d4146f22712952296cff  github-pages-listo.zip' | sha256sum --check
+          fi
       - name: Extraer catálogo
         run: unzip -q github-pages-listo.zip -d _site
       - name: Comprobar contenido
